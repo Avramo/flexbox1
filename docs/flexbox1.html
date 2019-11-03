@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            text-align: center;
+        }
+        div > div {
+            width: 100px;
+            height: 100px;
+            border: 2px dashed blue;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .divInlineIsSpan {
+            display: inline;
+        }
+
+        #d1 {background: lime;}
+        #d2 {background: orange;}
+        #d3 {background: red;}
+        #d4 {background: blue;}
+
+        h1 {
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+        }
+        .with_margin > div{
+            margin: 40px;           
+        }
+        .isFlex{
+            margin: 25px;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap:wrap;
+            align-items:flex-start;
+            align-content:space-between;
+
+        }
+       
+    </style>
+</head>
+<h1>div inline becomes span</h1>
+<div>
+    <div class="divInlineIsSpan" id="d1">1</div>
+    <div class="divInlineIsSpan" id="d2">2</div>
+    <div class="divInlineIsSpan" id="d3">3</div>
+    <div class="divInlineIsSpan" id="d4">4</div>
+</div>
+
+<h1>4 direct child divs with dispay inline-block</h1>
+<div >
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+    <div id="d3">3</div>
+    <div id="d4">4</div>
+</div>
+<hr><hr>
+
+<h1>4 non-direct child divs with dispay inline-block</h1>
+
+<div class="with_margin">
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+</div>
+<div class="with_margin">
+    <div id="d3">3</div>
+    <div id="d4">4</div>
+</div>
+<hr><hr>
+
+<h1>4 direct child divs with dispay flex</h1>
+<div class="isFlex">
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+    <div id="d3">3</div>
+    <div id="d4">4</div>
+</div>
+
+
+
+<div></div>
+</body>
+
+</html>
